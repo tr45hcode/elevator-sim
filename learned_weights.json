@@ -1,0 +1,29 @@
+{
+  "features": [
+    "distance",
+    "on_the_way",
+    "heading_away",
+    "riders",
+    "assigned_calls",
+    "stops",
+    "stops_before_call",
+    "already_stopping_there",
+    "full",
+    "route_distance"
+  ],
+  "weights": [
+    1.0784790443627796,
+    -1.1160824767375306,
+    0.20322387483795115,
+    -0.12067235968264829,
+    0.9334223927060922,
+    -0.6189288842924986,
+    -0.1527683395019911,
+    -1.8586860408979173,
+    0.6350166959858828,
+    1.7606298259268385
+  ],
+  "recheck_every": 5,
+  "validation": 0.9276667241685954,
+  "seed": 0
+}
