@@ -50,5 +50,5 @@ def get_requests():
         {'id': 'P48', 'floor': 5, 'destination': 6},
         {'id': 'P49', 'floor': 6, 'destination': 5},
         {'id': 'P50', 'floor': 1, 'destination': 2},
-        {'id': 'P51', 'floor':25, 'destination': 3}
+        {'id': 'P51', 'floor':20, 'destination': 3}
     ]
