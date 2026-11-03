@@ -1,2 +1,5 @@
 __pycache__/
 .pytest_cache/
+windtunnel.py
+cpu_watt.py
+livewire.py
