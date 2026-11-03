@@ -1,4 +1,27 @@
+import random
+
+
+def generate_requests(n=50, num_floors=20, mean_gap=2.0, seed=None):
+    """A random day: n passengers calling the lift at random times.
+
+    Gaps between calls follow an exponential distribution (a Poisson
+    process): mostly short gaps with the odd long lull, like people turning
+    up independently. mean_gap is the average gap in ticks, so lower means
+    a busier building. The same seed always gives the same day.
+    """
+    rng = random.Random(seed)
+    t = 0.0
+    passengers = []
+    for i in range(1, n + 1):
+        t += rng.expovariate(1 / mean_gap)
+        floor = rng.randint(1, num_floors)
+        destination = rng.choice([f for f in range(1, num_floors + 1) if f != floor])
+        passengers.append({"id": f"P{i}", "time": round(t), "floor": floor, "destination": destination})
+    return passengers
+
+
 def get_requests():
+    """The fixed dataset: everyone calls at tick 0."""
     return [
         {'id': 'P1', 'floor': 17, 'destination': 1},
         {'id': 'P2', 'floor': 12, 'destination': 5},

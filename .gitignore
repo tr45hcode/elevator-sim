@@ -3,3 +3,4 @@ __pycache__/
 windtunnel.py
 cpu_watt.py
 livewire.py
+.venv/
